@@ -1,0 +1,27 @@
+{
+    "app-id": "org.flatcam.FlatCAM",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "20.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "flatcam",
+    "modules": [
+        "matplot_dependencies.json",
+        "shapely_dependencies.json",
+        "scipy_dependencies.json",
+        "flatcam_dependencies.json",
+        {
+            "name": "flatcam",
+            "buildsystem": "simple",
+            "build-commands": [
+                "pip3 install --prefix=/app ."
+            ],
+            "sources": [
+                {
+                    "type": "git",
+                    "commit": "dae9cbb0471e693b95fd809ddd8bf11ff026ac67",
+                    "url": "https://bitbucket.org/jpcgt/flatcam.git"
+                }
+            ]
+        }
+    ]
+}

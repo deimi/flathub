@@ -1,0 +1,11 @@
+{
+    "name": "geos",
+    "buildsystem": "cmake",
+    "sources": [
+        {
+            "type": "git",
+            "tag": "3.9.0",
+            "url": "https://github.com/libgeos/geos.git"
+        }
+    ]
+}

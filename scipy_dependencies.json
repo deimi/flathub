@@ -1,0 +1,11 @@
+{
+    "name": "pybind11",
+    "buildsystem": "cmake",
+    "sources": [
+        {
+            "type": "git",
+            "tag": "v2.6.1",
+            "url": "https://github.com/pybind/pybind11.git"
+        }
+    ]
+}
